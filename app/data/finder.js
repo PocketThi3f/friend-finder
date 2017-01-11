@@ -14,8 +14,8 @@ var friendsArr = [
 	},
 
 	{
-	  "name":"Ahmed",
-	  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+	  "name":"Sonic/Mario And Friends",
+	  "photo":"http://gonintendo.com/system/stories/promo_images/000/251/337/original/36190303mariosonicattherio2016olympicgamesjapanese3dstrailerign-1447431605648.jpg?1454462152",
 	  "scores":[]
 	}
 
