@@ -3,8 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Matchmaking Friend System</title>
+	<!--Bootstrap CSS-->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!--Minified File of CSS for Font Awesome-->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--Minified File for jQuery-->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<!--Minified File for Javascript-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	</head>
 <body>
 	<div class="container">
@@ -15,7 +21,7 @@
 				<h2>Click the button below to begin the survey and find <strong>YOUR</strong> best friend!</h2>
 			<div>
 			<br/>		
-				<button type="button" class="btn btn-lg btn-primary">
+				<a href="/survey"><button type="button" class="btn btn-lg btn-primary"></a>
 					<h5>
 						<i class="fa fa-area-chart" aria-hidden="true"></i>
 						Go To Survey
@@ -24,7 +30,10 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="finder.js"></script>
+	<footer class="footer">
+        <div class="container">
+            <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/PocketThi3f/friend-finder">GitHub Repo</a></p>
+        </div>
+    </footer>
 </body>
 </html>
