@@ -1,6 +1,6 @@
 // Required files for exports and npm package installs
 var friendsData = require('../data/finder.js');
-var userInfo= require('../data/userData.js');
+var userInfo = require('../data/userData.js');
 var path = require('path');
 
 
@@ -14,12 +14,12 @@ module.exports = function(app){
 
 	// API GET Requests
 
-	app.get('/api/friends', function(req, res){
+	app.get('/api/finder', function(req, res){
 		res.json(friendsData);
 	});
 
-	app.get('/api/finder', function(req, res){
-		res.json(finderData);
+	app.get('/api/userData', function(req, res){
+		res.json(userInfo);
 	});
 
 
@@ -29,12 +29,12 @@ app.post('/api/friends', function(req, res){
 
 	clearMatch();
 
-	var newfriend = req.body;
+	var bestMatch = req.body;
 	var result;
 
-	console.log(newfriend);
+	console.log(bestMatch);
 	console.log(userData);
-	userData.push(newfriend);
+	userData.push(bestMatch);
 
 	res.json(newfriend);
 
@@ -51,16 +51,16 @@ app.post('/api/friends', function(req, res){
 	};
 
 	function clearMatch() {
-		finderData = [];
+		userInfo = [];
 	}
 
-
+	// Use Math.abs() so the difference between the values is NOT negative, then add the differences together for best match
 	for (var i = 0; i < friendsData.length; i++) {
 
 			friendScores = friendsData[i].scores;
 			
-			for (var j = 0; j < newfriend.scores.length; j++) {
-			results.push(Math.abs(newfriend.scores[j] - friendScores[j]));
+			for (var j = 0; j < newMatch.scores.length; j++) {
+			results.push(Math.abs(newMatch.scores[j] - friendScores[j]));
 			}
 
 			totalDiff = results.reduce(getSum);
@@ -81,15 +81,15 @@ app.post('/api/friends', function(req, res){
 
 	for (var i = 0; i < friendsData.length; i++) {
 		if (friendsData[i].rating == lowest) {
-			finderData.push(friendsData[i]);		
+			userInfo.push(friendsData[i]);
 		};
 
 		friendsData[i].rating = 0;
 	}
 
-	console.log(finderData);
+	console.log(userInfo);
 
-	friendsData.push(newfriend);
+	friendsData.push(newMatch);
 
 	
 
