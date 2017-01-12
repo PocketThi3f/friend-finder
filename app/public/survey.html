@@ -21,8 +21,8 @@
 				<h2>Survey Questionnaire</h2>
 					<hr/>
 					<h2><strong>About You</strong></h2>
-						<label>Name (required)<input type="text" class="form-control validate" placeholder="Name" required></label>
-						<label>Link To Photo Image (required)<input type="text" class="form-control validate" placeholder="Link To Photo" required></label>
+						<label>Name (required)<input type="text" class="form-control validate" placeholder="Name" id="name" required></label>
+						<label>Link To Photo Image (required)<input type="text" class="form-control validate" placeholder="Link To Photo" id="photo" required></label>
 				<br/>
 					<button class="btn btn-lg btn-success" id="banjoTune"><i class="fa fa-binoculars" aria-hidden="true"></i> Press For A-MA-ZING music.</button>
 				<hr/>
@@ -186,7 +186,7 @@
 	<!--Script tags for user info to store into, go into arrays of finder, then spits out user's best match-->
  <script type="text/javascript">
   $(document).ready(function(){
-    $('#submit').on("click", function(){
+    $('#modalPop').on("click", function(){
         var matchedUser =
         {
           name: $("#name").val().trim(),
