@@ -16,14 +16,18 @@
 </head>
 <body>
 	<div class="container">
-		<h2>Survey Questionnaire</h2>
-			<hr/>
-			<h2><strong>About You</strong></h2>
-				<label>Name (required)<input type="text" class="form-control validate" placeholder="Name" required></label>
-				<label>Link To Photo Image (required)<input type="text" class="form-control validate" placeholder="Link To Photo" required></label>
-		<br/>
-			<button class="btn btn-lg btn-success" id="banjoTune"><i class="fa fa-binoculars" aria-hidden="true"></i> Press For A-MA-ZING music.</button>
-		<hr/>
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Survey Questionnaire</h2>
+					<hr/>
+					<h2><strong>About You</strong></h2>
+						<label>Name (required)<input type="text" class="form-control validate" placeholder="Name" required></label>
+						<label>Link To Photo Image (required)<input type="text" class="form-control validate" placeholder="Link To Photo" required></label>
+				<br/>
+					<button class="btn btn-lg btn-success" id="banjoTune"><i class="fa fa-binoculars" aria-hidden="true"></i> Press For A-MA-ZING music.</button>
+				<hr/>
+			</div>
+		</div>		
 	<!-- Questions -->
     
     <div class="section">
@@ -155,7 +159,8 @@
     </div>
   </div>
 		<br/>
-		<button type="submit" class="btn btn-lg btn-primary btn-block" id="modalPop"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit</button>
+		<!-- Trigger the modal with a button -->
+		<button type="submit" class="btn btn-info btn-lg btn-primary btn-block" id="modalPop" data-toggle="modal" data-target="#modalPop"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit</button>
 
 		<!-- Modal Structure -->
     <div id="modalPop" class="modal">
