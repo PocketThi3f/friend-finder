@@ -8,211 +8,213 @@
 	<!--Minified File of CSS for Font Awesome-->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!--Minified File for jQuery-->
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery.js"></script>
 	<!--Minified File for Javascript-->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	<!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<h2>Survey Questionnaire</h2>
-					<hr/>
-					<h2><strong>About You</strong></h2>
-						<label>Name (required)<input type="text" class="form-control validate" placeholder="Name" id="name" required></label>
-						<label>Link To Photo Image (required)<input type="text" class="form-control validate" placeholder="Link To Photo" id="photo" required></label>
+				<hr/>
+				<h2><strong>About You</strong></h2>
+				<label>Name (required)<input type="text" class="form-control validate" placeholder="Name" id="name" required></label>
+				<label>Link To Photo Image (required)<input type="text" class="form-control validate" placeholder="Link To Photo" id="photo" required></label>
 				<br/>
-					<button class="btn btn-lg btn-success" id="banjoTune"><i class="fa fa-binoculars" aria-hidden="true"></i> Press For A-MA-ZING music.</button>
+				<!--<button class="btn btn-lg btn-success" id="banjoTune"><i class="fa fa-binoculars" aria-hidden="true"></i> Press For A-MA-ZING music.</button>-->
 				<hr/>
 			</div>
 		</div>		
-	<!-- Questions -->
-    
-    <div class="section">
-      <p class="question">1) The first thing that comes to your mind is chaos or preservation. (Closer to 5 is chaos, while 1 is preservation)</p>
-      <select class="browser-default" id="q1">
-        <option for="mindset">Select an Option</option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
-    </div>
-    <br>
-    <div class="section">
-      <p class="question">2) You prefer collaborating with a smaller group of people or by yourself.</p>
-      <select class="browser-default" id="q2">
-        <option for="mindset">Select an Option</option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
-    </div>
-    <br>
+		<!-- Questions -->
 
-    <div class="section">
-      <p class="question">3) You are the mastermind of your group of friends.</p>
-      <select class="browser-default" id="q3">
-        <option for="mindset">Select an Option</option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
-    </div>
-    <br>
-
-    <div class="section">
-      <p class="question">4) As technology advances the speedier the convenience for other people the better for you also.</p>
-      <select class="browser-default" id="q4">
-        <option for="mindset">Select an Option</option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
-    </div>
-    <br>
-
-    <div class="section">
-      <p class="question">5) You enjoy collecting big, shiny objects.</p>
-      <select class="browser-default" id="q5">
-        <option for="mindset">Select an Option</option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
-    </div>
-    <br>
-
-    <div class="section">
-      <p class="question">6) You are the "toolbox" of everyone in your social circle, always having something out of oridinary to use when someone asks for it.</p>
-      <select class="browser-default" id="q6">
-        <option for="mindset">Select an Option</option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
-    </div>
-    <br>
-
-    <div class="section">
-      <p class="question">7) When everything seems lost, you are the first to step forward as a leader and make something promising out of the situation.</p>
-      <select class="browser-default" id="q7">
-        <option for="mindset">Select an Option</option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
-    </div>
-    <br>
-
-    <div class="section">
-      <p class="question">8) There is nothing better than family and friends you already know.</p>
-      <select class="browser-default" id="q8">
-        <option for="mindset">Select an Option</option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
-    </div>
-    <br>
-
-    <div class="section">
-      <p class="question">9) Enemies are not a big problem because you tend to avoid making any.</p>
-      <select class="browser-default" id="q9">
-        <option for="mindset">Select an Option</option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
-    </div>
-    <br>
-
-    <div class="section">
-      <p class="question">10) You have fairly impulsive actions that lead you to favorable outcomes.</p>
-      <select class="browser-default" id="q10">
-        <option for="mindset">Select an Option</option>
-        <option value="1">1 (Strongly Disagree)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Strongly Agree)</option>
-      </select>
-    </div>
-  </div>
-		<br/>
-		<!-- Trigger the modal with a button -->
-		<button type="submit" class="btn btn-info btn-lg btn-primary btn-block" id="modalPop" data-toggle="modal" data-target="#modalPop"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit</button>
-
-		<!-- Modal -->
-		<div id="modalPop" class="modal fade" role="dialog">
-		  <div class="modal-dialog">
-
-		    <!-- Modal content-->
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal">&times;</button>
-		        <h4 class="modal-title">Congratulations!</h4>
-		      </div>
-		      <div class="modal-body">
-		        <p>Here is your best companion!</p>
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		      </div>
-		    </div>
-
-		  </div>
+		<div class="section">
+			<p class="question">1) The first thing that comes to your mind is chaos or preservation. (Closer to 5 is chaos, while 1 is preservation)</p>
+			<select class="browser-default" id="q1">
+				<option for="mindset">Select an Option</option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
 		</div>
+		<br>
+		<div class="section">
+			<p class="question">2) You prefer collaborating with a smaller group of people or by yourself.</p>
+			<select class="browser-default" id="q2">
+				<option for="mindset">Select an Option</option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+		</div>
+		<br>
 
-	<!--Script tags for user info to store into, go into arrays of finder, then spits out user's best match-->
- <script type="text/javascript">
-  $(document).ready(function(){
-    $('#modalPop').on("click", function(){
-        var matchedUser =
-        {
-          name: $("#name").val().trim(),
-          photo: $("#photo").val().trim(),
-          scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
-        };
-        var currentURL = window.location.origin;
-        $.post(currentURL + "/api/finder", matchedUser, function(data){
-            console.log(data);
-        });
-        $.get(currentURL + "/api/userData", function(data){
-            $("#finderImg").empty();
-            $("#finderText").empty();
-            $("#finderImg").attr("src", data[0].photo);
-            $("#finderText").append("<h3>" + data[0].name + ":</h3>");
-        })
-    return false;
-    });
-  });
-  </script>
+		<div class="section">
+			<p class="question">3) You are the mastermind of your group of friends.</p>
+			<select class="browser-default" id="q3">
+				<option for="mindset">Select an Option</option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+		</div>
+		<br>
+
+		<div class="section">
+			<p class="question">4) As technology advances the speedier the convenience for other people the better for you also.</p>
+			<select class="browser-default" id="q4">
+				<option for="mindset">Select an Option</option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+		</div>
+		<br>
+
+		<div class="section">
+			<p class="question">5) You enjoy collecting big, shiny objects.</p>
+			<select class="browser-default" id="q5">
+				<option for="mindset">Select an Option</option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+		</div>
+		<br>
+
+		<div class="section">
+			<p class="question">6) You are the "toolbox" of everyone in your social circle, always having something out of oridinary to use when someone asks for it.</p>
+			<select class="browser-default" id="q6">
+				<option for="mindset">Select an Option</option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+		</div>
+		<br>
+
+		<div class="section">
+			<p class="question">7) When everything seems lost, you are the first to step forward as a leader and make something promising out of the situation.</p>
+			<select class="browser-default" id="q7">
+				<option for="mindset">Select an Option</option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+		</div>
+		<br>
+
+		<div class="section">
+			<p class="question">8) There is nothing better than family and friends you already know.</p>
+			<select class="browser-default" id="q8">
+				<option for="mindset">Select an Option</option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+		</div>
+		<br>
+
+		<div class="section">
+			<p class="question">9) Enemies are not a big problem because you tend to avoid making any.</p>
+			<select class="browser-default" id="q9">
+				<option for="mindset">Select an Option</option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+		</div>
+		<br>
+
+		<div class="section">
+			<p class="question">10) You have fairly impulsive actions that lead you to favorable outcomes.</p>
+			<select class="browser-default" id="q10">
+				<option for="mindset">Select an Option</option>
+				<option value="1">1 (Strongly Disagree)</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5 (Strongly Agree)</option>
+			</select>
+		</div>
+	</div>
+	<br/>
+	<!-- Trigger the modal with a button -->
+	<div class="container">
+		<button type="submit" class="btn btn-info btn-md btn-primary btn-block" id="modalPop" data-toggle="modal" data-target="#modalPop"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit</button>
+	</div>
 
 	<footer class="footer">
-        <div class="container">
-            <p><a href="/api/finder">API Friends List</a> | <a href="https://github.com/PocketThi3f/friend-finder">GitHub Repo</a></p>
-        </div>
-    </footer>
+		<div class="container">
+			<p><a href="/api/finder">API Friends List</a> | <a href="https://github.com/PocketThi3f/friend-finder">GitHub Repo</a></p>
+		</div>
+	</footer>
 
+
+	<!-- Modal -->
+	<div id="modalPop" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Congratulations!</h4>
+				</div>
+				<div class="modal-body">
+					<p>Here is your best companion!</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!--Script tags for user info to store into, go into arrays of finder, then spits out user's best match-->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#modalPop').on("click", function(){
+				var matchedUser =
+				{
+					name: $("#name").val().trim(),
+					photo: $("#photo").val().trim(),
+					scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
+				};
+				var currentURL = window.location.origin;
+				$.post(currentURL + "/api/finder", matchedUser, function(data){
+					console.log(data);
+				});
+				$.get(currentURL + "/api/userData", function(data){
+					$("#finderImg").empty();
+					$("#finderText").empty();
+					$("#finderImg").attr("src", data[0].photo);
+					$("#finderText").append("<h3>" + data[0].name + ":</h3>");
+				})
+				return false;
+			});
+		});
+	</script>
 </body>
 </html>
