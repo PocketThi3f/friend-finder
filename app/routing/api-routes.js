@@ -25,7 +25,7 @@ module.exports = function(app){
 
 var userData = []; 
 
-app.post('/api/friends', function(req, res){
+app.post('/api/finder', function(req, res){
 
 	clearMatch();
 
@@ -59,8 +59,8 @@ app.post('/api/friends', function(req, res){
 
 			friendScores = friendsData[i].scores;
 			
-			for (var j = 0; j < newMatch.scores.length; j++) {
-			results.push(Math.abs(newMatch.scores[j] - friendScores[j]));
+			for (var j = 0; j < bestMatch.scores.length; j++) {
+			results.push(Math.abs(bestMatch.scores[j] - friendScores[j]));
 			}
 
 			totalDiff = results.reduce(getSum);
@@ -89,7 +89,7 @@ app.post('/api/friends', function(req, res){
 
 	console.log(userInfo);
 
-	friendsData.push(newMatch);
+	friendsData.push(bestMatch);
 
 	
 
