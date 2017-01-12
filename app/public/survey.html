@@ -196,8 +196,6 @@
         var currentURL = window.location.origin;
         $.post(currentURL + "/api/finder", matchedUser, function(data){
             console.log(data);
-    
-            $('#modalPop').openModal();
         });
         $.get(currentURL + "/api/userData", function(data){
             $("#finderImg").empty();
