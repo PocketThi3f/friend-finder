@@ -36,7 +36,7 @@ app.post('/api/friends', function(req, res){
 	console.log(userData);
 	userData.push(bestMatch);
 
-	res.json(newfriend);
+	res.json(bestMatch);
 
 
 	var friendScores;
