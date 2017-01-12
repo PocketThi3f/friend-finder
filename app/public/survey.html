@@ -174,6 +174,7 @@
       </div>
     </div>
 
+	<!--Script tags for user info to store into, go into arrays of finder, then spits out user's best match-->
  <script type="text/javascript">
   $(document).ready(function(){
     $('.modal-trigger').leanModal();
@@ -185,12 +186,12 @@
           scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val(), ]
         };
         var currentURL = window.location.origin;
-        $.post(currentURL + "/api/friends", matchedUser, function(data){
+        $.post(currentURL + "/api/finder", matchedUser, function(data){
             console.log(data);
     
             $('#modalPop').openModal();
         });
-        $.get(currentURL + "/api/finder", function(data){
+        $.get(currentURL + "/api/userData", function(data){
             $("#finderImg").empty();
             $("#finderText").empty();
             $("#finderImg").attr("src", data[0].photo);
