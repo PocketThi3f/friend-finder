@@ -162,22 +162,30 @@
 		<!-- Trigger the modal with a button -->
 		<button type="submit" class="btn btn-info btn-lg btn-primary btn-block" id="modalPop" data-toggle="modal" data-target="#modalPop"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit</button>
 
-		<!-- Modal Structure -->
-    <div id="modalPop" class="modal">
-      <div class="modal-content">
-        <h4>Modal Header</h4>
-        <span id="finderText"></span>
-        <span id="finderImg"></span>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
-      </div>
-    </div>
+		<!-- Modal -->
+		<div id="modalPop" class="modal fade" role="dialog">
+		  <div class="modal-dialog">
+
+		    <!-- Modal content-->
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">Modal Header</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p>Some text in the modal.</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+
+		  </div>
+		</div>
 
 	<!--Script tags for user info to store into, go into arrays of finder, then spits out user's best match-->
  <script type="text/javascript">
   $(document).ready(function(){
-    $('.modal-trigger').leanModal();
     $('#submit').on("click", function(){
         var matchedUser =
         {
@@ -207,5 +215,6 @@
             <p><a href="/api/finder">API Friends List</a> | <a href="https://github.com/PocketThi3f/friend-finder">GitHub Repo</a></p>
         </div>
     </footer>
+
 </body>
 </html>
